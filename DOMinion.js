@@ -69,7 +69,6 @@
 
 const DOMNodeCollection = __webpack_require__(1);
 
-
 const queuedFunctions = [];
 
 const $l = (arg) => {
@@ -264,3 +263,4 @@ module.exports = DOMNodeCollection;
 
 /***/ })
 /******/ ]);
+//# sourceMappingURL=DOMinion.js.map
