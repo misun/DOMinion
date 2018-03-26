@@ -4,6 +4,8 @@
 
 DOMinion is a vanila javascript project to make a light version of jQuery.
 
+[Live Demo](http://www.misun.me/DOMinion/)
+
 ### Features  
 
 DOMinion provides traversing and manipulating the DOM using vanilla JavaScript. It serves as a wrapper for DOM nodes / HTML elements; furthermore, it provides event listeners using vanilla JavaScript.
