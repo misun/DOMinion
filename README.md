@@ -34,7 +34,7 @@ All features in this game would be implemented using native JavaScript DOM manip
 
 This project will be implemented with the following technologies:
 
-- `JavaScript` for game logic
+- `JavaScript` for traversing & manipulating logic
 - `Yahoo API` for demonstrating DOMinion
 - `Webpack` for bundling scripts
 
