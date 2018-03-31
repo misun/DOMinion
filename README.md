@@ -2,9 +2,22 @@
 
 ### Background
 
-DOMinion is a vanila javascript project to make a light version of jQuery.
+DOMinion is a vanilla javascript project inpired by jQuery to traverse and manipulate the DOM, handle event listeners, and provide a promised Ajax request/response
 
 [Live Demo](http://www.misun.me/DOMinion/)
+
+### Demo a screenshot using DOMinion
+Weather app using yahoo weahter APIs and DOMinion $l.ajax
+
+![dominion2](https://user-images.githubusercontent.com/3492959/37889726-c95b5c3c-309b-11e8-9179-c5e03f696d50.jpg)
+
+### How to use
+Download the library into your project and load the DOMinion.js file in your code.
+```
+<head>
+  <script type="text/javascript" src="./DOMinion.js"></script>
+</head>
+```
 
 ### Features  
 
@@ -12,21 +25,70 @@ DOMinion provides traversing and manipulating the DOM using vanilla JavaScript. 
 
 DOMinion provides the following features:
 
-- [ ] new
-- [ ] html
-- [ ] each
-- [ ] append
-- [ ] attr
-- [ ] addClass
-- [ ] removeClass
-- [ ] children
-- [ ] parent
-- [ ] find
-- [ ] remove
-- [ ] on
-- [ ] off
-- [ ] $l.ajax
-- [ ] $.extend
+#### $l(selector)
+
+> This selector can receive either a single HTMLElement or a string with a CSS selector and in either case the return value will be a DOMNodeCollection
+
+#### html
+
+> If it receives an argument, this will become the innerHTML (hint hint) of the each of the nodes. If it does not receive an argument, it returns the innerHTML of the first node in the array.
+
+#### each
+
+> This method iterates over the DOMinion elements.
+
+#### empty 
+
+> This method clears out the content of all nodes in the internal array.
+
+#### append
+
+> This method accept either a DOMinion wrapped collection, an HTML element, or a string. Append the outerHTML of each element in the argument to the innerHTML of each element in the DOMNodeCollection.
+
+#### attr
+
+> This method returns a DOMNodeCollection of all attribute nodes registered to the specified node.
+
+#### addClass
+
+> This method take a string and add the class on each of the elements in the DOMNodeCollection.
+
+#### removeClass
+
+> This method take a string and remove the class on each of the elements in the DOMNodeCollection.
+
+#### children
+
+> This method returns a DOMNodeCollection of ALL children of all nodes in the array.
+
+#### parent
+
+> This method returns a DOMNodeCollection of the parents of each of the nodes
+
+#### find
+
+> This method returns a DOMNodeCollection of all the nodes matching the selector passed in as an argument that are descendants of the nodes.
+
+#### remove
+
+> This method removes the html of all the nodes in the array from the DOM.
+
+#### on
+
+> This method adds event handlers.
+
+#### off
+
+> This method removes event handlers.
+
+#### $.extend
+
+> This method merges JavaScript objects.
+
+#### $l.ajax
+
+> This method receives one options object argument and performs an asynchronous HTTP (Ajax) request.
+
 
 ### Architecture and Technologies
 
@@ -88,7 +150,4 @@ children(){
     });
   }
 ```
-### Demo a screenshot using DOMinion
-Weather app using yahoo weahter APIs and DOMinion $l.ajax
 
-![dominion2](https://user-images.githubusercontent.com/3492959/37889726-c95b5c3c-309b-11e8-9179-c5e03f696d50.jpg)
