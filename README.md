@@ -1,6 +1,6 @@
 # DOMinion
 
-### Background
+### Background 
 
 DOMinion is a vanilla javascript project inspired by jQuery to traverse and manipulate the DOM, handle event listeners, and provide a promised Ajax request/response
 
